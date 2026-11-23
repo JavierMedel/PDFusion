@@ -1,0 +1,49 @@
+Build a modern, polished browser-based web app called “PDFusion” for merging PDFs.
+
+Tech requirements:
+- Use JavaScript, HTML, and CSS (React is fine if preferred).
+- Run locally in the browser with a simple development server.
+- Do NOT use Docker.
+- Keep all PDF processing client-side: uploaded files must not be sent to any server.
+- Use pdf-lib for PDF merging and PDF.js for rendering PDF previews.
+- Provide clear setup instructions using npm install and npm run dev.
+
+Core features:
+1. Drag-and-drop PDF upload area, plus an “Import PDFs” button.
+2. Accept PDF files only. Show friendly validation errors for invalid files.
+3. Display imported PDFs as horizontal cards from left to right.
+4. Let users reorder PDFs through drag and drop; the left-to-right order is the merge order.
+5. Each card should show:
+   - PDF filename
+   - File size
+   - Page count
+   - First-page thumbnail preview
+   - Remove button
+   - Optional page navigation/preview modal to inspect all pages
+6. Include a larger preview panel where the user can visualize the selected PDF and browse its pages.
+7. “Merge PDFs” action that combines all files in their chosen order.
+8. After merging, let the user:
+   - Download/save the merged PDF
+   - Rename the output filename before downloading
+   - Start over / clear all files
+9. Add compression controls:
+   - A slider with selectable values: 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, and 90%
+   - Clearly explain this is a target compression level / quality trade-off.
+   - Show an estimated output-size reduction where feasible.
+   - Apply practical browser-compatible optimization where possible. If true aggressive PDF compression cannot be reliably performed client-side, clearly communicate that limitation in the UI and still optimize metadata/object handling without breaking the document.
+10. Include loading states and progress indicators while previews are generated, PDFs are merged, and the file is prepared for download.
+
+Design:
+- Premium, minimalist, modern SaaS look.
+- Light background, soft shadows, rounded cards, subtle glassmorphism accents.
+- Accent color: deep indigo / electric blue.
+- Responsive desktop-first layout that also works well on mobile.
+- Header with PDFusion logo/name and short tagline: “Merge PDFs, beautifully.”
+- Main flow should feel simple: Upload → Arrange → Preview → Compress → Download.
+- Use accessible buttons, keyboard-friendly controls, and good contrast.
+- Add tasteful micro-interactions for drag/drop, selection, and progress.
+
+Important:
+- Do not create backend APIs, database, authentication, cloud storage, or Docker configuration.
+- Include clean, modular source code and comments only where helpful.
+- Make the app functional, not just a visual mockup.
