@@ -2,6 +2,8 @@
 
 PDFusion is a local browser app for arranging, previewing, merging, and compressing PDFs. PDF.js renders previews and pdf-lib merges the pages. The development server serves the app and its assets. Files are processed on your device.
 
+![PDFusion showing the import area, file queue, preview, and compression controls](./app-design.png)
+
 ## Run locally
 
 Use Node.js 22.13 or newer. From this directory, run:
